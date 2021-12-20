@@ -50,6 +50,12 @@ class ChoosePlanetVC: UIViewController, UICollectionViewDataSource, UICollection
                     destController.planet = "jupiter"
                     self.navigationController?.pushViewController(destController, animated: true)
                 }
+            } else {
+                if let destController = self.storyboard?.instantiateViewController(withIdentifier: "exoplanetProperties") as? ExoplanetPropertiesVC {
+                    destController.modalPresentationStyle = .overFullScreen
+                    destController.planet = "puff"
+                    self.navigationController?.pushViewController(destController, animated: true)
+                }
             }
         }
     }
