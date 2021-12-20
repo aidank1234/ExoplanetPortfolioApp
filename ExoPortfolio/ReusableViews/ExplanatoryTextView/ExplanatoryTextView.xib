@@ -38,7 +38,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="dgR-kg-UJ4">
-                    <rect key="frame" x="20" y="54" width="374" height="131"/>
+                    <rect key="frame" x="20" y="64" width="374" height="121"/>
                     <string key="text">This is a potentially very long field of text. It can be used for explanatory purposes, elaboration purposes, or pretty much anything at all.</string>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                     <color key="textColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -53,7 +53,7 @@
                 <constraint firstItem="wSp-Lz-tCG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ajy-QI-mhR"/>
                 <constraint firstAttribute="trailing" secondItem="wSp-Lz-tCG" secondAttribute="trailing" constant="20" id="HWA-iC-BQg"/>
                 <constraint firstItem="dgR-kg-UJ4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="h1M-yP-EwA"/>
-                <constraint firstItem="dgR-kg-UJ4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="q7M-T2-z74"/>
+                <constraint firstItem="dgR-kg-UJ4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="q7M-T2-z74"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dgR-kg-UJ4" secondAttribute="trailing" constant="20" id="sPO-Cd-T0u"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>

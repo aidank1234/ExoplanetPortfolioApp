@@ -151,11 +151,7 @@
 				5FB34AEA27703CF70045CF0A /* ReusableViews */,
 				5FB34A70276FEF9B0045CF0A /* Main.storyboard */,
 				5FB34AE827703CE30045CF0A /* ChoosePlanet */,
-				5FB34AD02770246A0045CF0A /* HeaderCell.swift */,
-				5FB34AEB27703D360045CF0A /* GraphCell.swift */,
-				5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */,
-				5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */,
-				5FB34AE5277039F30045CF0A /* ExoplanetPropertiesVC.swift */,
+				5FB34AF927704BF20045CF0A /* ExoplanetProperties */,
 				5FB34A73276FEFA30045CF0A /* Assets.xcassets */,
 				5FB34A75276FEFA30045CF0A /* LaunchScreen.storyboard */,
 				5FB34A78276FEFA30045CF0A /* Info.plist */,
@@ -252,6 +248,18 @@
 				5FB34AC9277023D80045CF0A /* ContestReviewView */,
 			);
 			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		5FB34AF927704BF20045CF0A /* ExoplanetProperties */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34AD02770246A0045CF0A /* HeaderCell.swift */,
+				5FB34AEB27703D360045CF0A /* GraphCell.swift */,
+				5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */,
+				5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */,
+				5FB34AE5277039F30045CF0A /* ExoplanetPropertiesVC.swift */,
+			);
+			path = ExoplanetProperties;
 			sourceTree = "<group>";
 		};
 		822C8F3C47ED4CD7EC4A3372 /* Pods */ = {

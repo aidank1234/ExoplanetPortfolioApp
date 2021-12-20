@@ -118,7 +118,7 @@
         <!--Exoplanet PropertiesVC-->
         <scene sceneID="NPm-qf-FLS">
             <objects>
-                <viewController id="Ksb-Fa-Tn2" customClass="ExoplanetPropertiesVC" customModule="ExoPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="exoplanetProperties" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ksb-Fa-Tn2" customClass="ExoplanetPropertiesVC" customModule="ExoPortfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qec-s5-Hv3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +230,7 @@
                                             <outlet property="explanatoryView" destination="4Iq-PR-6RI" id="MRj-uf-iQh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="explanatoryCelll" rowHeight="290" id="ixf-ir-fPM" customClass="GraphCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="graphCell" rowHeight="290" id="ixf-ir-fPM" customClass="GraphCell" customModule="ExoPortfolio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="418" width="342" height="290"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ixf-ir-fPM" id="zix-VP-eS1">
@@ -238,15 +238,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOZ-iz-Ma2" customClass="GraphViewWithTitle" customModule="ExoPortfolio" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="11" width="302" height="238"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="260"/>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="TOZ-iz-Ma2" secondAttribute="trailing" id="Ado-qy-hZ3"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="TOZ-iz-Ma2" secondAttribute="bottom" constant="30" id="GsY-dq-EHF"/>
-                                                <constraint firstItem="TOZ-iz-Ma2" firstAttribute="leading" secondItem="zix-VP-eS1" secondAttribute="leadingMargin" id="LU0-e5-ryU"/>
-                                                <constraint firstItem="TOZ-iz-Ma2" firstAttribute="top" secondItem="zix-VP-eS1" secondAttribute="topMargin" id="tgk-Nb-KfD"/>
+                                                <constraint firstAttribute="bottom" secondItem="TOZ-iz-Ma2" secondAttribute="bottom" constant="30" id="5GL-xv-oVf"/>
+                                                <constraint firstItem="TOZ-iz-Ma2" firstAttribute="top" secondItem="zix-VP-eS1" secondAttribute="top" id="ajc-Fd-LUD"/>
+                                                <constraint firstItem="TOZ-iz-Ma2" firstAttribute="leading" secondItem="zix-VP-eS1" secondAttribute="leading" id="dbK-7j-IJk"/>
+                                                <constraint firstAttribute="trailing" secondItem="TOZ-iz-Ma2" secondAttribute="trailing" id="vNy-5b-JJT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -15,9 +15,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GraphViewWithTitle" customModule="ExoPortfolio" customModuleProvider="target">
             <connections>
-                <outlet property="contentView" destination="w9r-rA-2dZ" id="uUi-53-qKU"/>
-                <outlet property="graphImage" destination="67m-tq-dd4" id="SHm-bt-WbV"/>
-                <outlet property="graphTitle" destination="w9r-rA-2dZ" id="mEs-Rg-T5U"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="kl9-KQ-PX6"/>
+                <outlet property="graphImage" destination="67m-tq-dd4" id="fYo-wi-KON"/>
+                <outlet property="graphTitle" destination="w9r-rA-2dZ" id="st7-Kh-GTN"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
