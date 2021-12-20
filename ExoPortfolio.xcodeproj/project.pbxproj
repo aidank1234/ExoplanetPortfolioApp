@@ -49,6 +49,7 @@
 		5FB34AEC27703D360045CF0A /* GraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AEB27703D360045CF0A /* GraphCell.swift */; };
 		5FB34AF027703D4A0045CF0A /* ExplanatoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */; };
 		5FB34AF327703DBB0045CF0A /* SingleValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */; };
+		5FB34AFC2770FA070045CF0A /* ExoplanetStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AFB2770FA070045CF0A /* ExoplanetStoryVC.swift */; };
 		DC49294C571336FB6FC101B8 /* Pods_ExoPortfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8E0D032A81F815E5562C3E /* Pods_ExoPortfolio.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		5FB34AEB27703D360045CF0A /* GraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCell.swift; sourceTree = "<group>"; };
 		5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanatoryCell.swift; sourceTree = "<group>"; };
 		5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueCell.swift; sourceTree = "<group>"; };
+		5FB34AFB2770FA070045CF0A /* ExoplanetStoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetStoryVC.swift; sourceTree = "<group>"; };
 		9F8E0D032A81F815E5562C3E /* Pods_ExoPortfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExoPortfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF00D46585AE2504081D3253 /* Pods-ExoPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExoPortfolio.release.xcconfig"; path = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,6 +260,7 @@
 				5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */,
 				5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */,
 				5FB34AE5277039F30045CF0A /* ExoplanetPropertiesVC.swift */,
+				5FB34AFB2770FA070045CF0A /* ExoplanetStoryVC.swift */,
 			);
 			path = ExoplanetProperties;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				5FB34A6F276FEF9B0045CF0A /* ViewController.swift in Sources */,
 				5FB34AB127700FDD0045CF0A /* ContestCardView.swift in Sources */,
 				5FB34AD12770246A0045CF0A /* HeaderCell.swift in Sources */,
+				5FB34AFC2770FA070045CF0A /* ExoplanetStoryVC.swift in Sources */,
 				5FB34AC1277013480045CF0A /* ChoosePlanetVC.swift in Sources */,
 				5FB34A6B276FEF9B0045CF0A /* AppDelegate.swift in Sources */,
 				5FB34ADB2770316A0045CF0A /* GraphViewWithTitle.swift in Sources */,

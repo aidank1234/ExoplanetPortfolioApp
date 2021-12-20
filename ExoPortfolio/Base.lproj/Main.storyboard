@@ -297,10 +297,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Exoplanet StoryVC-->
         <scene sceneID="rmN-O6-Afk">
             <objects>
-                <viewController id="24o-IE-9cI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="exoplanetStory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="24o-IE-9cI" customClass="ExoplanetStoryVC" customModule="ExoPortfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SKN-py-nZg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,6 +390,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="explanatoryView" destination="kaP-eY-DgZ" id="urK-w2-Ocn"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="graphCell" rowHeight="290" id="nOO-LF-Zjw" customClass="GraphCell" customModule="ExoPortfolio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="418" width="342" height="290"/>
@@ -426,6 +429,9 @@
                             <constraint firstItem="wOi-0n-KqZ" firstAttribute="centerX" secondItem="SKN-py-nZg" secondAttribute="centerX" id="nPA-hb-XqJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exoplanetStoryTableView" destination="kGN-6g-0hP" id="uP3-8R-60m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTh-Uh-L7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

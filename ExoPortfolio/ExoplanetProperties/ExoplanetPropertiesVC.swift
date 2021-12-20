@@ -14,6 +14,19 @@ class ExoplanetPropertiesVC: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var exoplanetPropertiesTableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
     @IBAction func nextButtonPressed(_ sender: Any) {
+        if planet == "jupiter" {
+            if let destController = self.storyboard?.instantiateViewController(withIdentifier: "exoplanetStory") as? ExoplanetStoryVC {
+                destController.modalPresentationStyle = .overFullScreen
+                destController.planet = "jupiter"
+                self.navigationController?.pushViewController(destController, animated: true)
+            }
+        } else {
+            if let destController = self.storyboard?.instantiateViewController(withIdentifier: "exoplanetStory") as? ExoplanetStoryVC {
+                destController.modalPresentationStyle = .overFullScreen
+                destController.planet = "puff"
+                self.navigationController?.pushViewController(destController, animated: true)
+            }
+        }
     }
     
     override func viewDidLoad() {
