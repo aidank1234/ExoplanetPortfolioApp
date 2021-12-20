@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,47 @@
 		5FB34A72276FEF9B0045CF0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A70276FEF9B0045CF0A /* Main.storyboard */; };
 		5FB34A74276FEFA30045CF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A73276FEFA30045CF0A /* Assets.xcassets */; };
 		5FB34A77276FEFA30045CF0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A75276FEFA30045CF0A /* LaunchScreen.storyboard */; };
+		5FB34A9A27700B8C0045CF0A /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8727700B8C0045CF0A /* Montserrat-LightItalic.ttf */; };
+		5FB34A9B27700B8D0045CF0A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8827700B8C0045CF0A /* Montserrat-Medium.ttf */; };
+		5FB34A9C27700B8D0045CF0A /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8927700B8C0045CF0A /* Montserrat-BoldItalic.ttf */; };
+		5FB34A9D27700B8D0045CF0A /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8A27700B8C0045CF0A /* Montserrat-Light.ttf */; };
+		5FB34A9E27700B8D0045CF0A /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8B27700B8C0045CF0A /* Montserrat-ThinItalic.ttf */; };
+		5FB34A9F27700B8D0045CF0A /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8C27700B8C0045CF0A /* Montserrat-ExtraLight.ttf */; };
+		5FB34AA027700B8D0045CF0A /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8D27700B8C0045CF0A /* Montserrat-Thin.ttf */; };
+		5FB34AA127700B8D0045CF0A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8E27700B8C0045CF0A /* Montserrat-Bold.ttf */; };
+		5FB34AA227700B8D0045CF0A /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A8F27700B8C0045CF0A /* Montserrat-MediumItalic.ttf */; };
+		5FB34AA327700B8D0045CF0A /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9027700B8C0045CF0A /* Montserrat-BlackItalic.ttf */; };
+		5FB34AA427700B8D0045CF0A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9127700B8C0045CF0A /* Montserrat-SemiBold.ttf */; };
+		5FB34AA527700B8D0045CF0A /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9227700B8C0045CF0A /* Montserrat-ExtraLightItalic.ttf */; };
+		5FB34AA627700B8D0045CF0A /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9327700B8C0045CF0A /* Montserrat-ExtraBold.ttf */; };
+		5FB34AA727700B8D0045CF0A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9427700B8C0045CF0A /* OFL.txt */; };
+		5FB34AA827700B8D0045CF0A /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9527700B8C0045CF0A /* Montserrat-Black.ttf */; };
+		5FB34AA927700B8D0045CF0A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9627700B8C0045CF0A /* Montserrat-Regular.ttf */; };
+		5FB34AAA27700B8D0045CF0A /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9727700B8C0045CF0A /* Montserrat-Italic.ttf */; };
+		5FB34AAB27700B8D0045CF0A /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9827700B8C0045CF0A /* Montserrat-SemiBoldItalic.ttf */; };
+		5FB34AAC27700B8D0045CF0A /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34A9927700B8C0045CF0A /* Montserrat-ExtraBoldItalic.ttf */; };
+		5FB34AB127700FDD0045CF0A /* ContestCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AAF27700FDD0045CF0A /* ContestCardView.swift */; };
+		5FB34AB227700FDD0045CF0A /* ContestCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34AB027700FDD0045CF0A /* ContestCardView.xib */; };
+		5FB34ABE277012ED0045CF0A /* PlanetCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34ABD277012ED0045CF0A /* PlanetCardCell.swift */; };
+		5FB34AC1277013480045CF0A /* ChoosePlanetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AC0277013480045CF0A /* ChoosePlanetVC.swift */; };
+		5FB34AC42770142E0045CF0A /* Ext.UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AC32770142E0045CF0A /* Ext.UIViewController.swift */; };
+		5FB34AC7277014670045CF0A /* Ext.UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AC6277014670045CF0A /* Ext.UIColor.swift */; };
+		5FB34ACC277023D80045CF0A /* ContestReviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34ACA277023D80045CF0A /* ContestReviewView.xib */; };
+		5FB34ACD277023D80045CF0A /* ContestReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34ACB277023D80045CF0A /* ContestReviewView.swift */; };
+		5FB34AD12770246A0045CF0A /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AD02770246A0045CF0A /* HeaderCell.swift */; };
+		5FB34AD427702E9A0045CF0A /* GraphViewWithTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34AD327702E9A0045CF0A /* GraphViewWithTitle.xib */; };
+		5FB34ADB2770316A0045CF0A /* GraphViewWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34ADA2770316A0045CF0A /* GraphViewWithTitle.swift */; };
+		5FB34ADF277035D40045CF0A /* ExplanatoryTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB34ADE277035D40045CF0A /* ExplanatoryTextView.xib */; };
+		5FB34AE22770381D0045CF0A /* ExplanatoryTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AE12770381D0045CF0A /* ExplanatoryTextView.swift */; };
+		5FB34AE6277039F30045CF0A /* ExoplanetPropertiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AE5277039F30045CF0A /* ExoplanetPropertiesVC.swift */; };
+		5FB34AEC27703D360045CF0A /* GraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AEB27703D360045CF0A /* GraphCell.swift */; };
+		5FB34AF027703D4A0045CF0A /* ExplanatoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */; };
+		5FB34AF327703DBB0045CF0A /* SingleValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */; };
+		DC49294C571336FB6FC101B8 /* Pods_ExoPortfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8E0D032A81F815E5562C3E /* Pods_ExoPortfolio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51E63964F4E913070E176D79 /* Pods-ExoPortfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExoPortfolio.debug.xcconfig"; path = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio.debug.xcconfig"; sourceTree = "<group>"; };
 		5FB34A67276FEF9B0045CF0A /* ExoPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExoPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB34A6A276FEF9B0045CF0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB34A6C276FEF9B0045CF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +62,44 @@
 		5FB34A73276FEFA30045CF0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB34A76276FEFA30045CF0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FB34A78276FEFA30045CF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB34A8727700B8C0045CF0A /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A8827700B8C0045CF0A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		5FB34A8927700B8C0045CF0A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A8A27700B8C0045CF0A /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		5FB34A8B27700B8C0045CF0A /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A8C27700B8C0045CF0A /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5FB34A8D27700B8C0045CF0A /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		5FB34A8E27700B8C0045CF0A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		5FB34A8F27700B8C0045CF0A /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A9027700B8C0045CF0A /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A9127700B8C0045CF0A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		5FB34A9227700B8C0045CF0A /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A9327700B8C0045CF0A /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5FB34A9427700B8C0045CF0A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		5FB34A9527700B8C0045CF0A /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		5FB34A9627700B8C0045CF0A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		5FB34A9727700B8C0045CF0A /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		5FB34A9827700B8C0045CF0A /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		5FB34A9927700B8C0045CF0A /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		5FB34AAF27700FDD0045CF0A /* ContestCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestCardView.swift; sourceTree = "<group>"; };
+		5FB34AB027700FDD0045CF0A /* ContestCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContestCardView.xib; sourceTree = "<group>"; };
+		5FB34ABD277012ED0045CF0A /* PlanetCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCardCell.swift; sourceTree = "<group>"; };
+		5FB34AC0277013480045CF0A /* ChoosePlanetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlanetVC.swift; sourceTree = "<group>"; };
+		5FB34AC32770142E0045CF0A /* Ext.UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext.UIViewController.swift; sourceTree = "<group>"; };
+		5FB34AC6277014670045CF0A /* Ext.UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext.UIColor.swift; sourceTree = "<group>"; };
+		5FB34ACA277023D80045CF0A /* ContestReviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContestReviewView.xib; sourceTree = "<group>"; };
+		5FB34ACB277023D80045CF0A /* ContestReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestReviewView.swift; sourceTree = "<group>"; };
+		5FB34AD02770246A0045CF0A /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		5FB34AD327702E9A0045CF0A /* GraphViewWithTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphViewWithTitle.xib; sourceTree = "<group>"; };
+		5FB34ADA2770316A0045CF0A /* GraphViewWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewWithTitle.swift; sourceTree = "<group>"; };
+		5FB34ADE277035D40045CF0A /* ExplanatoryTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExplanatoryTextView.xib; sourceTree = "<group>"; };
+		5FB34AE12770381D0045CF0A /* ExplanatoryTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanatoryTextView.swift; sourceTree = "<group>"; };
+		5FB34AE5277039F30045CF0A /* ExoplanetPropertiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetPropertiesVC.swift; sourceTree = "<group>"; };
+		5FB34AEB27703D360045CF0A /* GraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCell.swift; sourceTree = "<group>"; };
+		5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanatoryCell.swift; sourceTree = "<group>"; };
+		5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueCell.swift; sourceTree = "<group>"; };
+		9F8E0D032A81F815E5562C3E /* Pods_ExoPortfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExoPortfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF00D46585AE2504081D3253 /* Pods-ExoPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExoPortfolio.release.xcconfig"; path = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +107,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC49294C571336FB6FC101B8 /* Pods_ExoPortfolio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291D768F54E89CF7616E2756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F8E0D032A81F815E5562C3E /* Pods_ExoPortfolio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5FB34A5E276FEF9A0045CF0A = {
 			isa = PBXGroup;
 			children = (
 				5FB34A69276FEF9B0045CF0A /* ExoPortfolio */,
 				5FB34A68276FEF9B0045CF0A /* Products */,
+				822C8F3C47ED4CD7EC4A3372 /* Pods */,
+				291D768F54E89CF7616E2756 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +146,121 @@
 				5FB34A6A276FEF9B0045CF0A /* AppDelegate.swift */,
 				5FB34A6C276FEF9B0045CF0A /* SceneDelegate.swift */,
 				5FB34A6E276FEF9B0045CF0A /* ViewController.swift */,
+				5FB34AC32770142E0045CF0A /* Ext.UIViewController.swift */,
+				5FB34AC6277014670045CF0A /* Ext.UIColor.swift */,
+				5FB34AEA27703CF70045CF0A /* ReusableViews */,
 				5FB34A70276FEF9B0045CF0A /* Main.storyboard */,
+				5FB34AE827703CE30045CF0A /* ChoosePlanet */,
+				5FB34AD02770246A0045CF0A /* HeaderCell.swift */,
+				5FB34AEB27703D360045CF0A /* GraphCell.swift */,
+				5FB34AF227703DBB0045CF0A /* SingleValueCell.swift */,
+				5FB34AEF27703D4A0045CF0A /* ExplanatoryCell.swift */,
+				5FB34AE5277039F30045CF0A /* ExoplanetPropertiesVC.swift */,
 				5FB34A73276FEFA30045CF0A /* Assets.xcassets */,
 				5FB34A75276FEFA30045CF0A /* LaunchScreen.storyboard */,
 				5FB34A78276FEFA30045CF0A /* Info.plist */,
+				5FB34A8527700B8C0045CF0A /* Fonts */,
 			);
 			path = ExoPortfolio;
+			sourceTree = "<group>";
+		};
+		5FB34A8527700B8C0045CF0A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34A8627700B8C0045CF0A /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5FB34A8627700B8C0045CF0A /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34A8727700B8C0045CF0A /* Montserrat-LightItalic.ttf */,
+				5FB34A8827700B8C0045CF0A /* Montserrat-Medium.ttf */,
+				5FB34A8927700B8C0045CF0A /* Montserrat-BoldItalic.ttf */,
+				5FB34A8A27700B8C0045CF0A /* Montserrat-Light.ttf */,
+				5FB34A8B27700B8C0045CF0A /* Montserrat-ThinItalic.ttf */,
+				5FB34A8C27700B8C0045CF0A /* Montserrat-ExtraLight.ttf */,
+				5FB34A8D27700B8C0045CF0A /* Montserrat-Thin.ttf */,
+				5FB34A8E27700B8C0045CF0A /* Montserrat-Bold.ttf */,
+				5FB34A8F27700B8C0045CF0A /* Montserrat-MediumItalic.ttf */,
+				5FB34A9027700B8C0045CF0A /* Montserrat-BlackItalic.ttf */,
+				5FB34A9127700B8C0045CF0A /* Montserrat-SemiBold.ttf */,
+				5FB34A9227700B8C0045CF0A /* Montserrat-ExtraLightItalic.ttf */,
+				5FB34A9327700B8C0045CF0A /* Montserrat-ExtraBold.ttf */,
+				5FB34A9427700B8C0045CF0A /* OFL.txt */,
+				5FB34A9527700B8C0045CF0A /* Montserrat-Black.ttf */,
+				5FB34A9627700B8C0045CF0A /* Montserrat-Regular.ttf */,
+				5FB34A9727700B8C0045CF0A /* Montserrat-Italic.ttf */,
+				5FB34A9827700B8C0045CF0A /* Montserrat-SemiBoldItalic.ttf */,
+				5FB34A9927700B8C0045CF0A /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		5FB34AAE27700FDD0045CF0A /* ContestCardView */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34AAF27700FDD0045CF0A /* ContestCardView.swift */,
+				5FB34AB027700FDD0045CF0A /* ContestCardView.xib */,
+			);
+			path = ContestCardView;
+			sourceTree = "<group>";
+		};
+		5FB34AC9277023D80045CF0A /* ContestReviewView */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34ACA277023D80045CF0A /* ContestReviewView.xib */,
+				5FB34ACB277023D80045CF0A /* ContestReviewView.swift */,
+			);
+			path = ContestReviewView;
+			sourceTree = "<group>";
+		};
+		5FB34ADD277031E00045CF0A /* GraphViewWithTitle */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34AD327702E9A0045CF0A /* GraphViewWithTitle.xib */,
+				5FB34ADA2770316A0045CF0A /* GraphViewWithTitle.swift */,
+			);
+			path = GraphViewWithTitle;
+			sourceTree = "<group>";
+		};
+		5FB34AE4277039260045CF0A /* ExplanatoryTextView */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34ADE277035D40045CF0A /* ExplanatoryTextView.xib */,
+				5FB34AE12770381D0045CF0A /* ExplanatoryTextView.swift */,
+			);
+			path = ExplanatoryTextView;
+			sourceTree = "<group>";
+		};
+		5FB34AE827703CE30045CF0A /* ChoosePlanet */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34ABD277012ED0045CF0A /* PlanetCardCell.swift */,
+				5FB34AC0277013480045CF0A /* ChoosePlanetVC.swift */,
+			);
+			path = ChoosePlanet;
+			sourceTree = "<group>";
+		};
+		5FB34AEA27703CF70045CF0A /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				5FB34AE4277039260045CF0A /* ExplanatoryTextView */,
+				5FB34ADD277031E00045CF0A /* GraphViewWithTitle */,
+				5FB34AAE27700FDD0045CF0A /* ContestCardView */,
+				5FB34AC9277023D80045CF0A /* ContestReviewView */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		822C8F3C47ED4CD7EC4A3372 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51E63964F4E913070E176D79 /* Pods-ExoPortfolio.debug.xcconfig */,
+				DF00D46585AE2504081D3253 /* Pods-ExoPortfolio.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FB34A7B276FEFA30045CF0A /* Build configuration list for PBXNativeTarget "ExoPortfolio" */;
 			buildPhases = (
+				2304B4D42336CAA8E3B41B13 /* [CP] Check Pods Manifest.lock */,
 				5FB34A63276FEF9B0045CF0A /* Sources */,
 				5FB34A64276FEF9B0045CF0A /* Frameworks */,
 				5FB34A65276FEF9B0045CF0A /* Resources */,
+				72874AFB465E9BCBCB28B497 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +322,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB34AD427702E9A0045CF0A /* GraphViewWithTitle.xib in Resources */,
+				5FB34AAB27700B8D0045CF0A /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				5FB34AA727700B8D0045CF0A /* OFL.txt in Resources */,
+				5FB34AA027700B8D0045CF0A /* Montserrat-Thin.ttf in Resources */,
+				5FB34ACC277023D80045CF0A /* ContestReviewView.xib in Resources */,
+				5FB34A9D27700B8D0045CF0A /* Montserrat-Light.ttf in Resources */,
+				5FB34AA527700B8D0045CF0A /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				5FB34A9C27700B8D0045CF0A /* Montserrat-BoldItalic.ttf in Resources */,
+				5FB34A9E27700B8D0045CF0A /* Montserrat-ThinItalic.ttf in Resources */,
+				5FB34ADF277035D40045CF0A /* ExplanatoryTextView.xib in Resources */,
+				5FB34AA627700B8D0045CF0A /* Montserrat-ExtraBold.ttf in Resources */,
+				5FB34AA927700B8D0045CF0A /* Montserrat-Regular.ttf in Resources */,
+				5FB34A9A27700B8C0045CF0A /* Montserrat-LightItalic.ttf in Resources */,
+				5FB34A9F27700B8D0045CF0A /* Montserrat-ExtraLight.ttf in Resources */,
+				5FB34A9B27700B8D0045CF0A /* Montserrat-Medium.ttf in Resources */,
 				5FB34A77276FEFA30045CF0A /* LaunchScreen.storyboard in Resources */,
 				5FB34A74276FEFA30045CF0A /* Assets.xcassets in Resources */,
+				5FB34AA327700B8D0045CF0A /* Montserrat-BlackItalic.ttf in Resources */,
+				5FB34AA427700B8D0045CF0A /* Montserrat-SemiBold.ttf in Resources */,
+				5FB34AAA27700B8D0045CF0A /* Montserrat-Italic.ttf in Resources */,
+				5FB34AA127700B8D0045CF0A /* Montserrat-Bold.ttf in Resources */,
+				5FB34AB227700FDD0045CF0A /* ContestCardView.xib in Resources */,
+				5FB34AA227700B8D0045CF0A /* Montserrat-MediumItalic.ttf in Resources */,
 				5FB34A72276FEF9B0045CF0A /* Main.storyboard in Resources */,
+				5FB34AA827700B8D0045CF0A /* Montserrat-Black.ttf in Resources */,
+				5FB34AAC27700B8D0045CF0A /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2304B4D42336CAA8E3B41B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExoPortfolio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72874AFB465E9BCBCB28B497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FB34A63276FEF9B0045CF0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB34AEC27703D360045CF0A /* GraphCell.swift in Sources */,
+				5FB34AC7277014670045CF0A /* Ext.UIColor.swift in Sources */,
+				5FB34ACD277023D80045CF0A /* ContestReviewView.swift in Sources */,
+				5FB34AE6277039F30045CF0A /* ExoplanetPropertiesVC.swift in Sources */,
+				5FB34AF027703D4A0045CF0A /* ExplanatoryCell.swift in Sources */,
+				5FB34AC42770142E0045CF0A /* Ext.UIViewController.swift in Sources */,
+				5FB34ABE277012ED0045CF0A /* PlanetCardCell.swift in Sources */,
 				5FB34A6F276FEF9B0045CF0A /* ViewController.swift in Sources */,
+				5FB34AB127700FDD0045CF0A /* ContestCardView.swift in Sources */,
+				5FB34AD12770246A0045CF0A /* HeaderCell.swift in Sources */,
+				5FB34AC1277013480045CF0A /* ChoosePlanetVC.swift in Sources */,
 				5FB34A6B276FEF9B0045CF0A /* AppDelegate.swift in Sources */,
+				5FB34ADB2770316A0045CF0A /* GraphViewWithTitle.swift in Sources */,
 				5FB34A6D276FEF9B0045CF0A /* SceneDelegate.swift in Sources */,
+				5FB34AE22770381D0045CF0A /* ExplanatoryTextView.swift in Sources */,
+				5FB34AF327703DBB0045CF0A /* SingleValueCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +559,7 @@
 		};
 		5FB34A7C276FEFA30045CF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E63964F4E913070E176D79 /* Pods-ExoPortfolio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +573,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LightBeats.ExoPortfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5FB34A7D276FEFA30045CF0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF00D46585AE2504081D3253 /* Pods-ExoPortfolio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LightBeats.ExoPortfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

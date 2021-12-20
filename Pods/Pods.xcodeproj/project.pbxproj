@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02121F13E6B5CEBE420CA02A65D0E9FD /* DropUpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C089C2933EDDA6FB608CCDC5FE18A4 /* DropUpMenu.swift */; };
+		0EC51E75E5A2E84968EF87F9DAF677AD /* UPCarouselFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0DEEB7BE567A16CCB48E4654C49D2F2 /* UPCarouselFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17B454D1BADCA942E8A3B976327F8627 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95EB4993CE294B09735280C4CED9118 /* SectionHeader.swift */; };
+		1B425A447EF78827188655BC9789795A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		21F91F0DC1BBAE821010B73FBB6B9E42 /* TBDropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB1CF8F913C4263B61A1A3CB6FD97D /* TBDropdownMenu-dummy.m */; };
+		33E2D5BEA11FB0A2E1B59835D7FB7A81 /* UPCarouselFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4888CFF7FEDADC58D7F8E38563A4F480 /* UPCarouselFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3963791A41184D8746FE798D2E9DF16A /* Pods-ExoPortfolio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FEF367CB48576BE79C78979898552AB /* Pods-ExoPortfolio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55ED54DEB34CE4587B187FE53647734F /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EA21172EF3C8DA1328EFB134A015F1 /* UPCarouselFlowLayout.swift */; };
+		5FDA8F691DA02F57404B9C8959755690 /* DropdownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218791EFF82575C0D4E9DA4DCE34E219 /* DropdownItem.swift */; };
+		6777E03BF278E9E1F96D9FA033010C70 /* Pods-ExoPortfolio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E913DF2B5C51157921B355BACF1761AE /* Pods-ExoPortfolio-dummy.m */; };
+		6980D0CD3BD30C9A9AAF5F468E77A318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B821501FE91B100B226AC357A1753DA7 /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD6BC4415BCF3B31ED1C3BACAFBEE07 /* DropdownMenu.swift */; };
+		BE1E457D99F0F42F1E4AB22A369C066E /* UPCarouselFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CEC8C9CA9B92F34F94181D0DF8589 /* UPCarouselFlowLayout-dummy.m */; };
+		D41DB834B3B33CA9C32A8F43553270D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FAB2D2BEEDE1707D36087D6F671B3D6C /* TBDropdownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E656702282FA4B89633F64091914A6FA /* TBDropdownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CAE67466F6AA5EFCA51D0F04BF66F94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E17C38B9D32C429A1EC461038461FF9;
+			remoteInfo = UPCarouselFlowLayout;
+		};
+		8A8277333F065390884A81591607EAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D9C0AFE858EA77D22148DA49F98BCA;
+			remoteInfo = TBDropdownMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E180754F1ACA443A13BCEC0F3472A5 /* TBDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TBDropdownMenu.framework; path = TBDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BD6BC4415BCF3B31ED1C3BACAFBEE07 /* DropdownMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropdownMenu.swift; path = DropdownMenu/DropdownMenu.swift; sourceTree = "<group>"; };
+		207E43C7D6DC1DE919A6B160C82118B9 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		218791EFF82575C0D4E9DA4DCE34E219 /* DropdownItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropdownItem.swift; path = DropdownMenu/DropdownItem.swift; sourceTree = "<group>"; };
+		329FA762A9BA71105A8FBBFACEB533E0 /* Pods-ExoPortfolio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExoPortfolio-acknowledgements.plist"; sourceTree = "<group>"; };
+		3ABF71EA5CD048C9E7B4DE742F63E9FC /* Pods-ExoPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExoPortfolio.release.xcconfig"; sourceTree = "<group>"; };
+		3FEF367CB48576BE79C78979898552AB /* Pods-ExoPortfolio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExoPortfolio-umbrella.h"; sourceTree = "<group>"; };
+		4430AE013FDDBB56B6B3F15FB5C6FA20 /* Pods-ExoPortfolio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExoPortfolio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		453C56A3BC83244C7840BB5328975CB4 /* Pods-ExoPortfolio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExoPortfolio-Info.plist"; sourceTree = "<group>"; };
+		47DD76098BC616E47FC3D251AD6F116F /* Pods-ExoPortfolio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExoPortfolio.modulemap"; sourceTree = "<group>"; };
+		4888CFF7FEDADC58D7F8E38563A4F480 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
+		57A92969AEA887DCE7F49E2F5FE5DCF5 /* TBDropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBDropdownMenu-prefix.pch"; sourceTree = "<group>"; };
+		5BEE50DB1F4AA2094C7FBE8742F1CB9C /* TBDropdownMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBDropdownMenu.release.xcconfig; sourceTree = "<group>"; };
+		6E1333966EFD96A17115F3B365AC51F9 /* TBDropdownMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBDropdownMenu.debug.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75EE175CD8A920773AB46977A0082BAC /* UPCarouselFlowLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UPCarouselFlowLayout-Info.plist"; sourceTree = "<group>"; };
+		7CBB1CF8F913C4263B61A1A3CB6FD97D /* TBDropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBDropdownMenu-dummy.m"; sourceTree = "<group>"; };
+		8299838069E921CB1C1C421EF9E5C2DD /* UPCarouselFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		8FE15D61D7458ABD1220727506A4F676 /* UPCarouselFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.debug.xcconfig; sourceTree = "<group>"; };
+		9331C85D7A942358BD0A05A0FE90B882 /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
+		96F611227FDD02E87679D018EF80136A /* Pods-ExoPortfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExoPortfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		9B3E2877E570BCC64786C785D8C8EA89 /* Pods_ExoPortfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExoPortfolio.framework; path = "Pods-ExoPortfolio.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B85C9ADF7DC8E331077AC5FCCBD93118 /* TBDropdownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TBDropdownMenu.modulemap; sourceTree = "<group>"; };
+		C0DEEB7BE567A16CCB48E4654C49D2F2 /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
+		C236CD196DADE874245F9DEC983EC2DD /* TBDropdownMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TBDropdownMenu-Info.plist"; sourceTree = "<group>"; };
+		C34CEC8C9CA9B92F34F94181D0DF8589 /* UPCarouselFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UPCarouselFlowLayout-dummy.m"; sourceTree = "<group>"; };
+		C95EB4993CE294B09735280C4CED9118 /* SectionHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionHeader.swift; path = DropdownMenu/SectionHeader.swift; sourceTree = "<group>"; };
+		D4EA21172EF3C8DA1328EFB134A015F1 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		E4C089C2933EDDA6FB608CCDC5FE18A4 /* DropUpMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropUpMenu.swift; path = DropdownMenu/DropUpMenu.swift; sourceTree = "<group>"; };
+		E656702282FA4B89633F64091914A6FA /* TBDropdownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBDropdownMenu-umbrella.h"; sourceTree = "<group>"; };
+		E913DF2B5C51157921B355BACF1761AE /* Pods-ExoPortfolio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExoPortfolio-dummy.m"; sourceTree = "<group>"; };
+		E9296A425FF00210B7438013A1EF3D5E /* UPCarouselFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.release.xcconfig; sourceTree = "<group>"; };
+		F632DB3DFF2B9565306DED134237030B /* Pods-ExoPortfolio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExoPortfolio-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96201DAF2D81A2C3F16F036DA9ECF17E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6980D0CD3BD30C9A9AAF5F468E77A318 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04F54634C3FC251E375AD5ABD47FCB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B425A447EF78827188655BC9789795A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14B4E36141B0191BC394239C146E273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41DB834B3B33CA9C32A8F43553270D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38726471C4A00B6B374244C4589D1902 /* TBDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				218791EFF82575C0D4E9DA4DCE34E219 /* DropdownItem.swift */,
+				0BD6BC4415BCF3B31ED1C3BACAFBEE07 /* DropdownMenu.swift */,
+				E4C089C2933EDDA6FB608CCDC5FE18A4 /* DropUpMenu.swift */,
+				C95EB4993CE294B09735280C4CED9118 /* SectionHeader.swift */,
+				CA21872C7F992B3ADF18F5FC632138E9 /* Support Files */,
+			);
+			name = TBDropdownMenu;
+			path = TBDropdownMenu;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6E2AD2EA66659A7845B8E2268ABE57CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38726471C4A00B6B374244C4589D1902 /* TBDropdownMenu */,
+				737BE67789C9262047726BE1703BE833 /* UPCarouselFlowLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72BD3694544D06F38F0E7BC17A3E72C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9331C85D7A942358BD0A05A0FE90B882 /* UPCarouselFlowLayout.modulemap */,
+				C34CEC8C9CA9B92F34F94181D0DF8589 /* UPCarouselFlowLayout-dummy.m */,
+				75EE175CD8A920773AB46977A0082BAC /* UPCarouselFlowLayout-Info.plist */,
+				8299838069E921CB1C1C421EF9E5C2DD /* UPCarouselFlowLayout-prefix.pch */,
+				C0DEEB7BE567A16CCB48E4654C49D2F2 /* UPCarouselFlowLayout-umbrella.h */,
+				8FE15D61D7458ABD1220727506A4F676 /* UPCarouselFlowLayout.debug.xcconfig */,
+				E9296A425FF00210B7438013A1EF3D5E /* UPCarouselFlowLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UPCarouselFlowLayout";
+			sourceTree = "<group>";
+		};
+		737BE67789C9262047726BE1703BE833 /* UPCarouselFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4888CFF7FEDADC58D7F8E38563A4F480 /* UPCarouselFlowLayout.h */,
+				D4EA21172EF3C8DA1328EFB134A015F1 /* UPCarouselFlowLayout.swift */,
+				72BD3694544D06F38F0E7BC17A3E72C9 /* Support Files */,
+			);
+			name = UPCarouselFlowLayout;
+			path = UPCarouselFlowLayout;
+			sourceTree = "<group>";
+		};
+		990E69AC2E56734C21CD0CC593D5E540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B3E2877E570BCC64786C785D8C8EA89 /* Pods_ExoPortfolio.framework */,
+				09E180754F1ACA443A13BCEC0F3472A5 /* TBDropdownMenu.framework */,
+				207E43C7D6DC1DE919A6B160C82118B9 /* UPCarouselFlowLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6B9567E951A09484F51FFC11AFFF6E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E6FDA062D560B6B81AEC2A28C35D24 /* Pods-ExoPortfolio */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CA21872C7F992B3ADF18F5FC632138E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B85C9ADF7DC8E331077AC5FCCBD93118 /* TBDropdownMenu.modulemap */,
+				7CBB1CF8F913C4263B61A1A3CB6FD97D /* TBDropdownMenu-dummy.m */,
+				C236CD196DADE874245F9DEC983EC2DD /* TBDropdownMenu-Info.plist */,
+				57A92969AEA887DCE7F49E2F5FE5DCF5 /* TBDropdownMenu-prefix.pch */,
+				E656702282FA4B89633F64091914A6FA /* TBDropdownMenu-umbrella.h */,
+				6E1333966EFD96A17115F3B365AC51F9 /* TBDropdownMenu.debug.xcconfig */,
+				5BEE50DB1F4AA2094C7FBE8742F1CB9C /* TBDropdownMenu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TBDropdownMenu";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6E2AD2EA66659A7845B8E2268ABE57CC /* Pods */,
+				990E69AC2E56734C21CD0CC593D5E540 /* Products */,
+				B6B9567E951A09484F51FFC11AFFF6E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2E6FDA062D560B6B81AEC2A28C35D24 /* Pods-ExoPortfolio */ = {
+			isa = PBXGroup;
+			children = (
+				47DD76098BC616E47FC3D251AD6F116F /* Pods-ExoPortfolio.modulemap */,
+				4430AE013FDDBB56B6B3F15FB5C6FA20 /* Pods-ExoPortfolio-acknowledgements.markdown */,
+				329FA762A9BA71105A8FBBFACEB533E0 /* Pods-ExoPortfolio-acknowledgements.plist */,
+				E913DF2B5C51157921B355BACF1761AE /* Pods-ExoPortfolio-dummy.m */,
+				F632DB3DFF2B9565306DED134237030B /* Pods-ExoPortfolio-frameworks.sh */,
+				453C56A3BC83244C7840BB5328975CB4 /* Pods-ExoPortfolio-Info.plist */,
+				3FEF367CB48576BE79C78979898552AB /* Pods-ExoPortfolio-umbrella.h */,
+				96F611227FDD02E87679D018EF80136A /* Pods-ExoPortfolio.debug.xcconfig */,
+				3ABF71EA5CD048C9E7B4DE742F63E9FC /* Pods-ExoPortfolio.release.xcconfig */,
+			);
+			name = "Pods-ExoPortfolio";
+			path = "Target Support Files/Pods-ExoPortfolio";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26838F38ED20E9970370D7B0EC673D8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3963791A41184D8746FE798D2E9DF16A /* Pods-ExoPortfolio-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD67F2CDAAAA0DD79065CD17D7F7D1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC51E75E5A2E84968EF87F9DAF677AD /* UPCarouselFlowLayout-umbrella.h in Headers */,
+				33E2D5BEA11FB0A2E1B59835D7FB7A81 /* UPCarouselFlowLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46DFAFCF437325E4C6D2BB37A030989 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB2D2BEEDE1707D36087D6F671B3D6C /* TBDropdownMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E17C38B9D32C429A1EC461038461FF9 /* UPCarouselFlowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3917ACD9CFB3E17314D002A1170414B9 /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */;
+			buildPhases = (
+				7FD67F2CDAAAA0DD79065CD17D7F7D1D /* Headers */,
+				B033BBE80CE7E4504F63913CFE3F6E19 /* Sources */,
+				B04F54634C3FC251E375AD5ABD47FCB2 /* Frameworks */,
+				8F7FBC604DD7A7C90F9D4F0E7D8D1B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UPCarouselFlowLayout;
+			productName = UPCarouselFlowLayout;
+			productReference = 207E43C7D6DC1DE919A6B160C82118B9 /* UPCarouselFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98D9C0AFE858EA77D22148DA49F98BCA /* TBDropdownMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3392B06F6151FDA2F85626CEE3DEB53 /* Build configuration list for PBXNativeTarget "TBDropdownMenu" */;
+			buildPhases = (
+				C46DFAFCF437325E4C6D2BB37A030989 /* Headers */,
+				7BC69B5D44058D62077EC13C02730D71 /* Sources */,
+				C14B4E36141B0191BC394239C146E273 /* Frameworks */,
+				76B23361EBBAE108ED8FA6EB96861F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBDropdownMenu;
+			productName = TBDropdownMenu;
+			productReference = 09E180754F1ACA443A13BCEC0F3472A5 /* TBDropdownMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F69ABF4C8C8FD05A3696766E0F8A6AF1 /* Pods-ExoPortfolio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2AC25A2ACE907518157591689F0FFAC /* Build configuration list for PBXNativeTarget "Pods-ExoPortfolio" */;
+			buildPhases = (
+				26838F38ED20E9970370D7B0EC673D8E /* Headers */,
+				C3BB5B00EE78D31633C75A3EE3B203A7 /* Sources */,
+				96201DAF2D81A2C3F16F036DA9ECF17E /* Frameworks */,
+				98951C963E5839768394097D0CDFF332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1710A226B0BAE1AB8E41D2A3757033E8 /* PBXTargetDependency */,
+				71C806705660F50C909D261EE48DB681 /* PBXTargetDependency */,
+			);
+			name = "Pods-ExoPortfolio";
+			productName = "Pods-ExoPortfolio";
+			productReference = 9B3E2877E570BCC64786C785D8C8EA89 /* Pods_ExoPortfolio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 990E69AC2E56734C21CD0CC593D5E540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F69ABF4C8C8FD05A3696766E0F8A6AF1 /* Pods-ExoPortfolio */,
+				98D9C0AFE858EA77D22148DA49F98BCA /* TBDropdownMenu */,
+				5E17C38B9D32C429A1EC461038461FF9 /* UPCarouselFlowLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76B23361EBBAE108ED8FA6EB96861F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7FBC604DD7A7C90F9D4F0E7D8D1B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98951C963E5839768394097D0CDFF332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BC69B5D44058D62077EC13C02730D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDA8F691DA02F57404B9C8959755690 /* DropdownItem.swift in Sources */,
+				B821501FE91B100B226AC357A1753DA7 /* DropdownMenu.swift in Sources */,
+				02121F13E6B5CEBE420CA02A65D0E9FD /* DropUpMenu.swift in Sources */,
+				17B454D1BADCA942E8A3B976327F8627 /* SectionHeader.swift in Sources */,
+				21F91F0DC1BBAE821010B73FBB6B9E42 /* TBDropdownMenu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B033BBE80CE7E4504F63913CFE3F6E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1E457D99F0F42F1E4AB22A369C066E /* UPCarouselFlowLayout-dummy.m in Sources */,
+				55ED54DEB34CE4587B187FE53647734F /* UPCarouselFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3BB5B00EE78D31633C75A3EE3B203A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6777E03BF278E9E1F96D9FA033010C70 /* Pods-ExoPortfolio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1710A226B0BAE1AB8E41D2A3757033E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TBDropdownMenu;
+			target = 98D9C0AFE858EA77D22148DA49F98BCA /* TBDropdownMenu */;
+			targetProxy = 8A8277333F065390884A81591607EAC2 /* PBXContainerItemProxy */;
+		};
+		71C806705660F50C909D261EE48DB681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UPCarouselFlowLayout;
+			target = 5E17C38B9D32C429A1EC461038461FF9 /* UPCarouselFlowLayout */;
+			targetProxy = 3CAE67466F6AA5EFCA51D0F04BF66F94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13F8A023A81DF45DF8D11D0CB2A6E316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEE50DB1F4AA2094C7FBE8742F1CB9C /* TBDropdownMenu.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TBDropdownMenu/TBDropdownMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TBDropdownMenu/TBDropdownMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TBDropdownMenu/TBDropdownMenu.modulemap";
+				PRODUCT_MODULE_NAME = TBDropdownMenu;
+				PRODUCT_NAME = TBDropdownMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1541551AD52590B9CDD437F9210B1735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9296A425FF00210B7438013A1EF3D5E /* UPCarouselFlowLayout.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = UPCarouselFlowLayout;
+				PRODUCT_NAME = UPCarouselFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8BE9AABCAAF18FFC702F63C130B6497E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE15D61D7458ABD1220727506A4F676 /* UPCarouselFlowLayout.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = UPCarouselFlowLayout;
+				PRODUCT_NAME = UPCarouselFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		981EE234940ECECE5ACFE7824CFBFDF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1333966EFD96A17115F3B365AC51F9 /* TBDropdownMenu.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TBDropdownMenu/TBDropdownMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TBDropdownMenu/TBDropdownMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TBDropdownMenu/TBDropdownMenu.modulemap";
+				PRODUCT_MODULE_NAME = TBDropdownMenu;
+				PRODUCT_NAME = TBDropdownMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DE0F1E9263E8DEC580C55489C7F02D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABF71EA5CD048C9E7B4DE742F63E9FC /* Pods-ExoPortfolio.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D651D688069912F0B4E4BA1ED2931CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F611227FDD02E87679D018EF80136A /* Pods-ExoPortfolio.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExoPortfolio/Pods-ExoPortfolio.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3917ACD9CFB3E17314D002A1170414B9 /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE9AABCAAF18FFC702F63C130B6497E /* Debug */,
+				1541551AD52590B9CDD437F9210B1735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3392B06F6151FDA2F85626CEE3DEB53 /* Build configuration list for PBXNativeTarget "TBDropdownMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981EE234940ECECE5ACFE7824CFBFDF8 /* Debug */,
+				13F8A023A81DF45DF8D11D0CB2A6E316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2AC25A2ACE907518157591689F0FFAC /* Build configuration list for PBXNativeTarget "Pods-ExoPortfolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D651D688069912F0B4E4BA1ED2931CD0 /* Debug */,
+				9DE0F1E9263E8DEC580C55489C7F02D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

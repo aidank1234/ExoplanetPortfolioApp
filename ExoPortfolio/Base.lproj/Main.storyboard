@@ -1,24 +1,366 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kyU-30-gc1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Choose PlanetVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChoosePlanetVC" customModule="ExoPortfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBG" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-mA-Gze">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exoplanet Portfolio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-14-Ok7">
+                                <rect key="frame" x="93.5" y="88" width="227" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="joinContest"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1jT-hv-Za6"/>
+                                    <constraint firstAttribute="width" constant="227" id="xYD-BF-EAH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planetLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-pn-X22">
+                                <rect key="frame" x="41" y="148" width="332" height="176.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IAk-pn-X22" secondAttribute="height" multiplier="139:74" id="rTZ-ea-kKY"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ9-oK-NdI">
+                                <rect key="frame" x="20" y="440" width="374" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="qGy-fm-U4a"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PGJ-1S-I1N">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="planetCard" id="e8E-aW-Ygo" customClass="PlanetCardCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15" width="275" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gdh-eN-IT7">
+                                            <rect key="frame" x="0.0" y="0.0" width="275" height="350"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfL-Oi-csM" customClass="ContestCardView" customModule="PicksApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="350"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="IEp-c0-R6a"/>
+                                                        <constraint firstAttribute="height" constant="300" id="Mop-zB-xqo"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kfL-Oi-csM" firstAttribute="leading" secondItem="gdh-eN-IT7" secondAttribute="leading" id="5tl-3O-Uh7"/>
+                                                <constraint firstAttribute="trailing" secondItem="kfL-Oi-csM" secondAttribute="trailing" id="gan-NU-LZW"/>
+                                                <constraint firstAttribute="bottom" secondItem="kfL-Oi-csM" secondAttribute="bottom" id="hSn-VI-3Ey"/>
+                                                <constraint firstItem="kfL-Oi-csM" firstAttribute="top" secondItem="gdh-eN-IT7" secondAttribute="top" id="sGz-PT-aQV"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="275" height="350"/>
+                                        <connections>
+                                            <outlet property="cardView" destination="kfL-Oi-csM" id="l6I-hR-vEZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bmi-mA-Gze" secondAttribute="bottom" id="55T-FD-NfA"/>
+                            <constraint firstItem="IAk-pn-X22" firstAttribute="top" secondItem="Wtc-14-Ok7" secondAttribute="bottom" constant="30" id="6Ea-EN-EPW"/>
+                            <constraint firstItem="bmi-mA-Gze" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7rw-Ue-ktd"/>
+                            <constraint firstItem="bmi-mA-Gze" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HoO-pJ-559"/>
+                            <constraint firstItem="Wtc-14-Ok7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K6I-EL-33E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OZ9-oK-NdI" secondAttribute="trailing" constant="20" id="PW7-SQ-lYj"/>
+                            <constraint firstItem="Wtc-14-Ok7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pta-mL-BCy"/>
+                            <constraint firstItem="bmi-mA-Gze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eXX-WG-eNh"/>
+                            <constraint firstItem="OZ9-oK-NdI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IAk-pn-X22" secondAttribute="bottom" constant="30" id="enq-wL-2My"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OZ9-oK-NdI" secondAttribute="bottom" constant="42" id="gej-dc-8i2"/>
+                            <constraint firstItem="OZ9-oK-NdI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lNz-xY-5dR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IAk-pn-X22" secondAttribute="trailing" constant="41" id="mnb-iO-wn0"/>
+                            <constraint firstItem="IAk-pn-X22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="oyk-VK-tOM"/>
+                            <constraint firstItem="OZ9-oK-NdI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qjp-Li-nUN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cF0-QV-aaW"/>
+                    <connections>
+                        <outlet property="planetCardCarouselView" destination="OZ9-oK-NdI" id="0x2-VO-Wyg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="807" y="64"/>
+        </scene>
+        <!--Exoplanet PropertiesVC-->
+        <scene sceneID="NPm-qf-FLS">
+            <objects>
+                <viewController id="Ksb-Fa-Tn2" customClass="ExoplanetPropertiesVC" customModule="ExoPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qec-s5-Hv3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradientBG" translatesAutoresizingMaskIntoConstraints="NO" id="XPA-md-WtP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-WZ-o5G">
+                                <rect key="frame" x="36" y="764" width="342" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Pde-Be-HjN"/>
+                                </constraints>
+                                <state key="normal" image="nextUnselected"/>
+                                <state key="disabled" image="nextSelected"/>
+                                <state key="selected" image="nextSelected"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="Ksb-Fa-Tn2" eventType="touchUpInside" id="JUe-jj-KLP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exoplanet Properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-Zi-TaS">
+                                <rect key="frame" x="83" y="54" width="248" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="joinContest"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6fw-mW-li9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fr1-t3-ebe">
+                                <rect key="frame" x="36" y="114" width="342" height="620"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="45" id="UG8-6A-Bkt" customClass="HeaderCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="342" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UG8-6A-Bkt" id="Kqp-Sx-nTn">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Given Values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drh-0N-8Zo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="EoZ-ge-gGg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="drh-0N-8Zo" firstAttribute="top" secondItem="Kqp-Sx-nTn" secondAttribute="top" id="CTg-5A-vvp"/>
+                                                <constraint firstItem="drh-0N-8Zo" firstAttribute="leading" secondItem="Kqp-Sx-nTn" secondAttribute="leading" id="KPb-uw-ayh"/>
+                                                <constraint firstAttribute="trailing" secondItem="drh-0N-8Zo" secondAttribute="trailing" id="e8N-Zt-Bzc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="drh-0N-8Zo" id="Nd2-se-vX2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="singleValueCell" rowHeight="115" id="KbV-7U-9pa" customClass="SingleValueCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="73" width="342" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KbV-7U-9pa" id="u2u-M0-zN3">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5F6-Yc-A6o" customClass="ContestReviewView" customModule="ExoPortfolio" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="85"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="5F6-Yc-A6o" secondAttribute="trailing" id="6ye-bk-aHN"/>
+                                                <constraint firstItem="5F6-Yc-A6o" firstAttribute="leading" secondItem="u2u-M0-zN3" secondAttribute="leading" id="KOE-p8-Cft"/>
+                                                <constraint firstAttribute="bottom" secondItem="5F6-Yc-A6o" secondAttribute="bottom" constant="30" id="RJF-YV-SnG"/>
+                                                <constraint firstItem="5F6-Yc-A6o" firstAttribute="top" secondItem="u2u-M0-zN3" secondAttribute="top" id="jpg-AB-k1h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="singleValueView" destination="5F6-Yc-A6o" id="br5-Iv-olG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="explanatoryCell" rowHeight="230" id="5nF-Qv-nj2" customClass="ExplanatoryCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="188" width="342" height="230"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5nF-Qv-nj2" id="ECV-V4-e1x">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Iq-PR-6RI" customClass="ExplanatoryTextView" customModule="ExoPortfolio" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Iq-PR-6RI" firstAttribute="top" secondItem="ECV-V4-e1x" secondAttribute="top" id="3xP-4w-oeO"/>
+                                                <constraint firstItem="4Iq-PR-6RI" firstAttribute="leading" secondItem="ECV-V4-e1x" secondAttribute="leading" id="r59-Gf-jYu"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Iq-PR-6RI" secondAttribute="bottom" constant="30" id="xs8-vY-xsg"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Iq-PR-6RI" secondAttribute="trailing" id="zSP-3T-Pak"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="explanatoryView" destination="4Iq-PR-6RI" id="MRj-uf-iQh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="explanatoryCelll" rowHeight="290" id="ixf-ir-fPM" customClass="GraphCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="418" width="342" height="290"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ixf-ir-fPM" id="zix-VP-eS1">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="290"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOZ-iz-Ma2" customClass="GraphViewWithTitle" customModule="ExoPortfolio" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="302" height="238"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TOZ-iz-Ma2" secondAttribute="trailing" id="Ado-qy-hZ3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TOZ-iz-Ma2" secondAttribute="bottom" constant="30" id="GsY-dq-EHF"/>
+                                                <constraint firstItem="TOZ-iz-Ma2" firstAttribute="leading" secondItem="zix-VP-eS1" secondAttribute="leadingMargin" id="LU0-e5-ryU"/>
+                                                <constraint firstItem="TOZ-iz-Ma2" firstAttribute="top" secondItem="zix-VP-eS1" secondAttribute="topMargin" id="tgk-Nb-KfD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="graphView" destination="TOZ-iz-Ma2" id="ai0-Hm-rzF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="an4-dY-GAl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="an4-dY-GAl" firstAttribute="bottom" secondItem="5Hw-WZ-o5G" secondAttribute="bottom" constant="30" id="2Yx-89-84k"/>
+                            <constraint firstItem="NYV-Zi-TaS" firstAttribute="top" secondItem="an4-dY-GAl" secondAttribute="top" constant="10" id="6NG-Nc-MNW"/>
+                            <constraint firstItem="5Hw-WZ-o5G" firstAttribute="width" secondItem="Fr1-t3-ebe" secondAttribute="width" id="7u1-Ew-cft"/>
+                            <constraint firstItem="Fr1-t3-ebe" firstAttribute="centerX" secondItem="qec-s5-Hv3" secondAttribute="centerX" id="AbE-CO-6xK"/>
+                            <constraint firstItem="5Hw-WZ-o5G" firstAttribute="top" secondItem="Fr1-t3-ebe" secondAttribute="bottom" constant="30" id="AyM-eT-W4T"/>
+                            <constraint firstItem="NYV-Zi-TaS" firstAttribute="centerX" secondItem="qec-s5-Hv3" secondAttribute="centerX" id="BRd-Af-Swy"/>
+                            <constraint firstItem="5Hw-WZ-o5G" firstAttribute="leading" secondItem="an4-dY-GAl" secondAttribute="leading" constant="36" id="BpS-nS-tXY"/>
+                            <constraint firstItem="an4-dY-GAl" firstAttribute="trailing" secondItem="5Hw-WZ-o5G" secondAttribute="trailing" constant="36" id="OVm-Lp-gb2"/>
+                            <constraint firstItem="Fr1-t3-ebe" firstAttribute="top" secondItem="NYV-Zi-TaS" secondAttribute="bottom" constant="30" id="zKA-hY-Z6F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exoplanetPropertiesTableView" destination="Fr1-t3-ebe" id="DZc-dy-TYX"/>
+                        <outlet property="nextButton" destination="5Hw-WZ-o5G" id="Etf-7N-CDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eN5-iS-hzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511.5942028985507" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="doP-kk-jbi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kyU-30-gc1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t8y-PG-dSp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8sZ-G8-Mns"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5G-Bh-qIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rmN-O6-Afk">
+            <objects>
+                <viewController id="24o-IE-9cI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKN-py-nZg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradientBG" translatesAutoresizingMaskIntoConstraints="NO" id="h5d-oD-1XK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-iF-NG0">
+                                <rect key="frame" x="36" y="764" width="342" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="XBj-cO-VeO"/>
+                                </constraints>
+                                <state key="normal" image="nextUnselected"/>
+                                <state key="disabled" image="nextSelected"/>
+                                <state key="selected" image="nextSelected"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exoplanet Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-0n-KqZ">
+                                <rect key="frame" x="113.5" y="54" width="187" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="joinContest"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JQX-ah-ChK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-6g-0hP">
+                                <rect key="frame" x="36" y="114" width="342" height="620"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kvf-py-T5c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kvf-py-T5c" firstAttribute="bottom" secondItem="avN-iF-NG0" secondAttribute="bottom" constant="30" id="63r-fA-iu2"/>
+                            <constraint firstItem="avN-iF-NG0" firstAttribute="top" secondItem="kGN-6g-0hP" secondAttribute="bottom" constant="30" id="AI9-uu-mH3"/>
+                            <constraint firstItem="avN-iF-NG0" firstAttribute="leading" secondItem="Kvf-py-T5c" secondAttribute="leading" constant="36" id="Fy9-WW-fOL"/>
+                            <constraint firstItem="avN-iF-NG0" firstAttribute="width" secondItem="kGN-6g-0hP" secondAttribute="width" id="Rbt-dn-mfD"/>
+                            <constraint firstItem="kGN-6g-0hP" firstAttribute="centerX" secondItem="SKN-py-nZg" secondAttribute="centerX" id="SQZ-RN-CfB"/>
+                            <constraint firstItem="kGN-6g-0hP" firstAttribute="top" secondItem="wOi-0n-KqZ" secondAttribute="bottom" constant="30" id="ca6-3m-5gj"/>
+                            <constraint firstItem="Kvf-py-T5c" firstAttribute="trailing" secondItem="avN-iF-NG0" secondAttribute="trailing" constant="36" id="dbb-TL-nf5"/>
+                            <constraint firstItem="wOi-0n-KqZ" firstAttribute="top" secondItem="Kvf-py-T5c" secondAttribute="top" constant="10" id="h4z-U6-2jQ"/>
+                            <constraint firstItem="wOi-0n-KqZ" firstAttribute="centerX" secondItem="SKN-py-nZg" secondAttribute="centerX" id="nPA-hb-XqJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTh-Uh-L7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gradientBG" width="390" height="844"/>
+        <image name="nextSelected" width="342" height="68"/>
+        <image name="nextUnselected" width="342" height="68"/>
+        <image name="planetLogo" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -1,0 +1,20 @@
+PODS:
+  - TBDropdownMenu (4.1.0)
+  - UPCarouselFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - TBDropdownMenu
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - TBDropdownMenu
+    - UPCarouselFlowLayout
+
+SPEC CHECKSUMS:
+  TBDropdownMenu: 9201924bf459a3ae426b992f3db032d377020636
+  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
+
+PODFILE CHECKSUM: 84bbf3d77890f60e927a59881ef78b58cae10236
+
+COCOAPODS: 1.10.1
