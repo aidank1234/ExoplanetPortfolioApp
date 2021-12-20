@@ -203,7 +203,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="singleValueView" destination="5F6-Yc-A6o" id="br5-Iv-olG"/>
+                                            <outlet property="singleValueView" destination="5F6-Yc-A6o" id="D9u-tL-939"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="explanatoryCell" rowHeight="230" id="5nF-Qv-nj2" customClass="ExplanatoryCell" customModule="ExoPortfolio" customModuleProvider="target">
@@ -227,7 +227,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="explanatoryView" destination="4Iq-PR-6RI" id="MRj-uf-iQh"/>
+                                            <outlet property="explanatoryView" destination="4Iq-PR-6RI" id="TDR-gN-kBH"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="graphCell" rowHeight="290" id="ixf-ir-fPM" customClass="GraphCell" customModule="ExoPortfolio" customModuleProvider="target">
@@ -250,7 +250,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="graphView" destination="TOZ-iz-Ma2" id="ai0-Hm-rzF"/>
+                                            <outlet property="graphView" destination="TOZ-iz-Ma2" id="GAC-UR-V8D"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -309,15 +309,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-iF-NG0">
-                                <rect key="frame" x="36" y="764" width="342" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="XBj-cO-VeO"/>
-                                </constraints>
-                                <state key="normal" image="nextUnselected"/>
-                                <state key="disabled" image="nextSelected"/>
-                                <state key="selected" image="nextSelected"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exoplanet Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-0n-KqZ">
                                 <rect key="frame" x="113.5" y="54" width="187" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="joinContest"/>
@@ -329,20 +320,108 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-6g-0hP">
-                                <rect key="frame" x="36" y="114" width="342" height="620"/>
+                                <rect key="frame" x="36" y="114" width="342" height="718"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="45" id="cs3-R6-LS1" customClass="HeaderCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="342" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cs3-R6-LS1" id="sWT-CX-8IK">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Given Values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-wT-KJV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="DYw-Iy-prq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fCo-wT-KJV" firstAttribute="top" secondItem="sWT-CX-8IK" secondAttribute="top" id="LQH-iw-tmQ"/>
+                                                <constraint firstItem="fCo-wT-KJV" firstAttribute="leading" secondItem="sWT-CX-8IK" secondAttribute="leading" id="xVk-da-CIL"/>
+                                                <constraint firstAttribute="trailing" secondItem="fCo-wT-KJV" secondAttribute="trailing" id="xy3-jA-1fL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="fCo-wT-KJV" id="op0-qe-mUi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="singleValueCell" rowHeight="115" id="Nnz-h2-lSc" customClass="SingleValueCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="73" width="342" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nnz-h2-lSc" id="r6e-py-Nta">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUZ-R3-1E4" customClass="ContestReviewView" customModule="ExoPortfolio" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="85"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="GUZ-R3-1E4" secondAttribute="trailing" id="74o-8P-hhG"/>
+                                                <constraint firstItem="GUZ-R3-1E4" firstAttribute="leading" secondItem="r6e-py-Nta" secondAttribute="leading" id="Qxf-ut-huf"/>
+                                                <constraint firstItem="GUZ-R3-1E4" firstAttribute="top" secondItem="r6e-py-Nta" secondAttribute="top" id="ZJc-Jg-vum"/>
+                                                <constraint firstAttribute="bottom" secondItem="GUZ-R3-1E4" secondAttribute="bottom" constant="30" id="sWm-Z1-tk5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="explanatoryCell" rowHeight="230" id="xme-6A-ii8" customClass="ExplanatoryCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="188" width="342" height="230"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xme-6A-ii8" id="N5x-tI-sbz">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-eY-DgZ" customClass="ExplanatoryTextView" customModule="ExoPortfolio" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="kaP-eY-DgZ" secondAttribute="bottom" constant="30" id="0r1-9T-KvN"/>
+                                                <constraint firstItem="kaP-eY-DgZ" firstAttribute="leading" secondItem="N5x-tI-sbz" secondAttribute="leading" id="EUV-Ci-1aw"/>
+                                                <constraint firstAttribute="trailing" secondItem="kaP-eY-DgZ" secondAttribute="trailing" id="W0n-UW-DeD"/>
+                                                <constraint firstItem="kaP-eY-DgZ" firstAttribute="top" secondItem="N5x-tI-sbz" secondAttribute="top" id="uaK-Gi-yoa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="graphCell" rowHeight="290" id="nOO-LF-Zjw" customClass="GraphCell" customModule="ExoPortfolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="418" width="342" height="290"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nOO-LF-Zjw" id="hGX-Ho-c7K">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="290"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJq-t4-wIN" customClass="GraphViewWithTitle" customModule="ExoPortfolio" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="260"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="nJq-t4-wIN" secondAttribute="bottom" constant="30" id="3O4-Xf-joy"/>
+                                                <constraint firstAttribute="trailing" secondItem="nJq-t4-wIN" secondAttribute="trailing" id="EVA-te-lMx"/>
+                                                <constraint firstItem="nJq-t4-wIN" firstAttribute="leading" secondItem="hGX-Ho-c7K" secondAttribute="leading" id="bW1-oq-Jkq"/>
+                                                <constraint firstItem="nJq-t4-wIN" firstAttribute="top" secondItem="hGX-Ho-c7K" secondAttribute="top" id="mdv-IW-flX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kvf-py-T5c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kvf-py-T5c" firstAttribute="bottom" secondItem="avN-iF-NG0" secondAttribute="bottom" constant="30" id="63r-fA-iu2"/>
-                            <constraint firstItem="avN-iF-NG0" firstAttribute="top" secondItem="kGN-6g-0hP" secondAttribute="bottom" constant="30" id="AI9-uu-mH3"/>
-                            <constraint firstItem="avN-iF-NG0" firstAttribute="leading" secondItem="Kvf-py-T5c" secondAttribute="leading" constant="36" id="Fy9-WW-fOL"/>
-                            <constraint firstItem="avN-iF-NG0" firstAttribute="width" secondItem="kGN-6g-0hP" secondAttribute="width" id="Rbt-dn-mfD"/>
                             <constraint firstItem="kGN-6g-0hP" firstAttribute="centerX" secondItem="SKN-py-nZg" secondAttribute="centerX" id="SQZ-RN-CfB"/>
+                            <constraint firstItem="Kvf-py-T5c" firstAttribute="bottom" secondItem="kGN-6g-0hP" secondAttribute="bottom" constant="30" id="X2B-Aq-6wM"/>
+                            <constraint firstItem="Kvf-py-T5c" firstAttribute="trailing" secondItem="kGN-6g-0hP" secondAttribute="trailing" constant="36" id="YN3-av-jbg"/>
+                            <constraint firstItem="kGN-6g-0hP" firstAttribute="leading" secondItem="Kvf-py-T5c" secondAttribute="leading" constant="36" id="Z9T-h5-T8M"/>
                             <constraint firstItem="kGN-6g-0hP" firstAttribute="top" secondItem="wOi-0n-KqZ" secondAttribute="bottom" constant="30" id="ca6-3m-5gj"/>
-                            <constraint firstItem="Kvf-py-T5c" firstAttribute="trailing" secondItem="avN-iF-NG0" secondAttribute="trailing" constant="36" id="dbb-TL-nf5"/>
                             <constraint firstItem="wOi-0n-KqZ" firstAttribute="top" secondItem="Kvf-py-T5c" secondAttribute="top" constant="10" id="h4z-U6-2jQ"/>
                             <constraint firstItem="wOi-0n-KqZ" firstAttribute="centerX" secondItem="SKN-py-nZg" secondAttribute="centerX" id="nPA-hb-XqJ"/>
                         </constraints>
@@ -350,7 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTh-Uh-L7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2223" y="64"/>
+            <point key="canvasLocation" x="2221.739130434783" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>
