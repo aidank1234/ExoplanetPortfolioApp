@@ -37,24 +37,24 @@ class ExoplanetPropertiesVC: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 19
+        return 36
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // Headers
-        if indexPath.row == 0 || indexPath.row == 2 || indexPath.row == 7 || indexPath.row == 11 || indexPath.row == 15 {
+        if indexPath.row == 0 || indexPath.row == 2 || indexPath.row == 7 || indexPath.row == 11 || indexPath.row == 15 || indexPath.row == 19 || indexPath.row == 23 || indexPath.row == 26 || indexPath.row == 29 || indexPath.row == 33 {
             return 45
         }
         // Explanation for Given Values
-        else if indexPath.row == 3 || indexPath.row == 1 || indexPath.row == 17 {
+        else if indexPath.row == 3 || indexPath.row == 1 || indexPath.row == 17 || indexPath.row == 24 || indexPath.row == 27 || indexPath.row == 34 {
             return 275
         }
         // Single Value Cells
-        else if indexPath.row == 4 || indexPath.row == 5 || indexPath.row == 6 || indexPath.row == 10 || indexPath.row == 14 || indexPath.row == 18 {
+        else if indexPath.row == 4 || indexPath.row == 5 || indexPath.row == 6 || indexPath.row == 10 || indexPath.row == 14 || indexPath.row == 18 || indexPath.row == 22 || indexPath.row == 25 || indexPath.row == 28 || indexPath.row == 32 || indexPath.row == 35 {
             return 115
         }
         // Graphs
-        else if indexPath.row == 8 || indexPath.row == 12 || indexPath.row == 13 || indexPath.row == 16 {
+        else if indexPath.row == 8 || indexPath.row == 12 || indexPath.row == 13 || indexPath.row == 16 || indexPath.row == 20 || indexPath.row == 21 || indexPath.row == 30 || indexPath.row == 31 {
             return 290
         }
         // Explanation for transit graph
@@ -184,7 +184,7 @@ class ExoplanetPropertiesVC: UIViewController, UITableViewDelegate, UITableViewD
                 cell.graphView.graphTitle.text = "Radial Velocity Curve"
                 return cell
             }
-            // Explanation of transit graph
+            // Explanation of radial velocity graph
             else if indexPath.row == 17 {
                 let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "explanatoryCell", for: indexPath) as! ExplanatoryCell
                 cell.explanatoryView.textTitle.text = "Radial Velocity Details"
@@ -196,6 +196,113 @@ class ExoplanetPropertiesVC: UIViewController, UITableViewDelegate, UITableViewD
                 let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "singleValueCell", for: indexPath) as! SingleValueCell
                 cell.singleValueView.contestReviewTitle.text = "Radial Velocity"
                 cell.singleValueView.contestDetail.text = "38 - 42 m/s"
+                return cell
+            }
+            // Header for 'Exoplanet Mass'
+            else if indexPath.row == 19 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! HeaderCell
+                cell.headerLabel.text = "Exoplanet Mass"
+                return cell
+            }
+            // Graph image for exoplanet mass formula
+            else if indexPath.row == 20 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "graphCell", for: indexPath) as! GraphCell
+                cell.graphView.graphImage.image = UIImage(named: "planetMassComputation")
+                cell.graphView.graphTitle.text = "Exoplanet Mass Formula"
+                return cell
+            }
+            else if indexPath.row == 21 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "graphCell", for: indexPath) as! GraphCell
+                cell.graphView.graphImage.image = UIImage(named: "jupiterMassComputation")
+                cell.graphView.graphTitle.text = "Exoplanet Mass Computation"
+                return cell
+            }
+            else if indexPath.row == 22 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "singleValueCell", for: indexPath) as! SingleValueCell
+                cell.singleValueView.contestReviewTitle.text = "Exoplanet Mass"
+                cell.singleValueView.contestDetail.text = "0.96 - 1.07 Jupiter Masses"
+                return cell
+            }
+            // Header for 'Exoplanet Radius'
+            else if indexPath.row == 23 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! HeaderCell
+                cell.headerLabel.text = "Exoplanet Radius"
+                return cell
+            }
+            // Explanation of exoplanet radius
+            else if indexPath.row == 24 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "explanatoryCell", for: indexPath) as! ExplanatoryCell
+                cell.explanatoryView.textTitle.text = "Exoplanet Radius Details"
+                cell.explanatoryView.explanatoryText.text = "Our research team used the NAAP transit simulator, information about our star, and previously calculated attributes of the exoplanet in order to calculate the exoplanet's radius."
+                return cell
+            }
+            else if indexPath.row == 25 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "singleValueCell", for: indexPath) as! SingleValueCell
+                cell.singleValueView.contestReviewTitle.text = "Exoplanet Radius"
+                cell.singleValueView.contestDetail.text = "1.10 - 1.22 Jupiter Radii"
+                return cell
+            }
+            // Header for 'Exoplanet Albedo'
+            else if indexPath.row == 26 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! HeaderCell
+                cell.headerLabel.text = "Exoplanet Albedo"
+                return cell
+            }
+            // Explanation of exoplanet albedo
+            else if indexPath.row == 27 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "explanatoryCell", for: indexPath) as! ExplanatoryCell
+                cell.explanatoryView.textTitle.text = "Exoplanet Albedo Details"
+                cell.explanatoryView.explanatoryText.text = "Our research team noticed that the exoplanet's mean density is right near the midpoint of Jupiter & Saturn's mean densities. Given that both Jupiter & Saturn have an albedo around 0.5, that is what we estimated for this exoplanet's albedo."
+                return cell
+            }
+            else if indexPath.row == 28 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "singleValueCell", for: indexPath) as! SingleValueCell
+                cell.singleValueView.contestReviewTitle.text = "Albedo Estimation"
+                cell.singleValueView.contestDetail.text = "0.5"
+                return cell
+            }
+            // Header for 'Equilibrium Temperature'
+            else if indexPath.row == 29 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! HeaderCell
+                cell.headerLabel.text = "Equilibrium Temperature"
+                return cell
+            }
+            // Graph image for temperature formula
+            else if indexPath.row == 30 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "graphCell", for: indexPath) as! GraphCell
+                cell.graphView.graphImage.image = UIImage(named: "temperatureComputation")
+                cell.graphView.graphTitle.text = "Formula"
+                return cell
+            }
+            else if indexPath.row == 31 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "graphCell", for: indexPath) as! GraphCell
+                cell.graphView.graphImage.image = UIImage(named: "jupiterTemperatureComputation")
+                cell.graphView.graphTitle.text = "Computation"
+                return cell
+            }
+            else if indexPath.row == 32 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "singleValueCell", for: indexPath) as! SingleValueCell
+                cell.singleValueView.contestReviewTitle.text = "Equilibrium Temperature"
+                cell.singleValueView.contestDetail.text = "421 - 465 Kelvin"
+                return cell
+            }
+            // Header for 'Eccentricity'
+            else if indexPath.row == 33 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! HeaderCell
+                cell.headerLabel.text = "Orbital Eccentricithy"
+                return cell
+            }
+            // Explanation of eccentricity
+            else if indexPath.row == 34 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "explanatoryCell", for: indexPath) as! ExplanatoryCell
+                cell.explanatoryView.textTitle.text = "Orbital Eccentricity"
+                cell.explanatoryView.explanatoryText.text = "We compared our radial velocity curves to that of the NAAP orbital eccentricity simulator. The eccentricity of the exoplanet appears to be very circular. Since we cannot measure eccentricity, we will estimate it to be about 0.03."
+                return cell
+            }
+            else if indexPath.row == 35 {
+                let cell = exoplanetPropertiesTableView.dequeueReusableCell(withIdentifier: "singleValueCell", for: indexPath) as! SingleValueCell
+                cell.singleValueView.contestReviewTitle.text = "Orbital Eccentricity"
+                cell.singleValueView.contestDetail.text = "0.029 - 0.032"
                 return cell
             }
         }
